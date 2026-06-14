@@ -19,7 +19,7 @@ let timeInterval = 0
 // Function to fetch questions from the API
 async function fetchQuestions() {
     try {
-        const response = await fetch(`BACKEND_URL/api/questions/${category}`); // API URL
+        const response = await fetch(`${BACKEND_URL}/api/questions/Java`); // API URL
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
